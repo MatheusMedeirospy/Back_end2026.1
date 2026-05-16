@@ -23,7 +23,7 @@ while True:
         if valor > 200:
             desconto = valor * 0.10
             descontofinal = valor - desconto
-            print(f"Como sua compra passou de R$200, você ganhou um desconto de 10%, sua compra que ficaria {valor}\n com o desconto ficou {descontofinal} ")
+            print(f"Como sua compra passou de R$200, você ganhou um desconto de 10%, sua compra que ficaria no valor de R${valor}\n com o desconto ficou por apenas R${descontofinal} ")
         break
     if compra == "minecraft":
         qtd = qtd + 1
