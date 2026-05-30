@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> {{msg}}</h1>
+
+    <main>
+        <table border="1">
+            <thead>
+                <th>Nome</th>
+                <th>Curso</th>
+                <th>Turma</th>
+                <th>Ação</th>
+            </thead>
+            <tbody>
+                {% for info_alunos in alunos %}
+                <tr>
+                    <td>{{info_alunos.nome}}</td>
+                    <td>{{info_alunos.curso}}</td>
+                    <td>{{info_alunos.turma}}</td>
+                    <td>
+                        <button>Editar</button> <button>Excluir</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+
+
+</body>
+</html>
